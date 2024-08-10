@@ -56,9 +56,9 @@ end)
 -- Key press event to send the key press
 UserInputService.InputBegan:Connect(function(input, isProcessed)
     if isProcessed then return end
-    if input.KeyCode == Enum.KeyCode.Q then -- Key to send
+    if input.KeyCode == Enum.KeyCode.F then -- Key to send
         local vim = game:GetService("VirtualInputManager")
-        vim:SendKeyEvent(true, Enum.KeyCode.Q, false, game)
+        vim:SendKeyEvent(true, Enum.KeyCode.F, false, game)
     end
 end)
 
